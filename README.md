@@ -9,6 +9,8 @@ I re-labelled the dataset with **RoboFlow**, as many annotations were missing. M
 ### Preprocessing 
 For the preprocessing of the images I used a technique consisting in cutting the image into several **tiles**. I made this choice because the objects (starfish) represent on average `less than 1%` of the image. So instead of having `1280x720` images I had `640x320` images. This allowed a **faster training** and **more visible objects**.
 
+![alt text](tiles.png)
+
 Here is an interesting research paper on the subject: [The Power of Tiling for Small Object Detection](https://openaccess.thecvf.com/content_CVPRW_2019/papers/UAVision/Unel_The_Power_of_Tiling_for_Small_Object_Detection_CVPRW_2019_paper.pdf)
 
 ### Training
