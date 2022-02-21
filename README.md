@@ -22,6 +22,7 @@ I proceeded in two steps:
 - Then I took my best model and added tracking with the library ([norfair](https://github.com/tryolabs/norfair)) which improved my results. Finally, I performed a model ensemble ([WBF : Weighted-Boxes-Fusion](https://github.com/ZFTurbo/Weighted-Boxes-Fusion)), i.e. I merged the predictions of two models:
   - A model trained with the image tiles
   - A model trained with the classic images
+  
 The results were even better
 
 
