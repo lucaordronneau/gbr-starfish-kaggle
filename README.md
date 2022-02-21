@@ -4,7 +4,7 @@
 ### By Luca Ordronneau
 
 ### 📌 Data Preparation
-I re-labelled the dataset with **RoboFlow**, as many annotations were missing. Moreover, I split my dataset in two parts (training and validation) thanks to a **GroupKFold** (`k=5`) on the video sequences, in order to avoid **overfitting** ie to avoid images of the same sequence to be in the training set and the validation set.
+I re-labelled the dataset with **RoboFlow**, as many annotations were missing. Moreover, I split my dataset in two parts (training and validation) thanks to a **GroupKFold** (`k=5`) on the video sequences. This avoids **overfitting** of our model during training. Indeed, we avoid that images of the same video sequence are found in both the training set and the validation set
 
 ### 📌 Preprocessing 
 For the preprocessing of the images I used a technique consisting in cutting the image into several **tiles**. I made this choice because the objects (starfish) represent on average `less than 1%` of the image. So instead of having `1280x720` images I had `640x320` images. This allowed a **faster training** and **more visible objects**.
