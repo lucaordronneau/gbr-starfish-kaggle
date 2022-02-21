@@ -9,7 +9,7 @@ I re-labelled the dataset with **RoboFlow**, as many annotations were missing. M
 ### 📌 Preprocessing 
 For the preprocessing of the images I used a technique consisting in cutting the image into several **tiles**. I made this choice because the objects (starfish) represent on average `less than 1%` of the image. So instead of having `1280x720` images I had `640x320` images. This allowed a **faster training** and **more visible objects**.
 
-![alt text](images/tiles.png)
+![alt text](images/tiles-starfish.png)
 
 Here is an interesting research paper on the subject: [The Power of Tiling for Small Object Detection](https://openaccess.thecvf.com/content_CVPRW_2019/papers/UAVision/Unel_The_Power_of_Tiling_for_Small_Object_Detection_CVPRW_2019_paper.pdf)
 
@@ -21,5 +21,5 @@ I proceeded in two steps:
 - First I made predictions in a classical way by adjusting the hyperparameters as well as possible (confidence, iou, tta, image resolution)
 - Then I took the best models by adding tracking with the library ([norfair](https://github.com/tryolabs/norfair)) and by making a set of models ([WBF : Weighted-Boxes-Fusion](https://github.com/ZFTurbo/Weighted-Boxes-Fusion)) with a model trained with the image tiles and another trained with the normal images.
 
-![alt text](images/tiles-starfish.png)
+
 ![alt text](images/starfish.png)
