@@ -1,4 +1,4 @@
-# ⭐🐟 Kaggle competition : TensorFlow - Help Protect the Great Barrier Reef ⭐🐟
+# ⭐🐟 Kaggle competition : TensorFlow - Help Protect the Great Barrier Reef
 # 🏁 267/2026 (top 14%)
 ## Detect crown-of-thorns starfish in underwater image data
 ### By Luca Ordronneau
